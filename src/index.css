@@ -1,13 +1,157 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+h1{
+  font-family: 'Lobster', cursive;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fbdc44;
+}
+
+nav div.navContainer{
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav div{
+  display: flex;
+  align-items: center;
+}
+
+nav div h1{
+  color: #8e6539;
+  font-size: 1.75rem;
+}
+
+nav img{
+  height: 80px;
+  width: auto;
+}
+
+input.inputSearch{
+  border-radius: 5px 0 0 5px;
+}
+
+input.inputSearch::placeholder{
+  color: gray;
+}
+
+button.btnSearch{
+  border-radius: 0 5px 5px 0;
+  background: #633e16;
+  color: white;
+  transition: .5s all;
+}
+
+button.btnSearch:hover{
+  background: #a88157;
+}
+
+div.formContainer{
+  display: flex;
+  width: 100%;
+  max-width: 1200px;
+  justify-content: flex-end;
+  position: absolute;
+  top: 0;
+}
+
+form{
+  display: flex;
+  margin-top: 20px;
+}
+
+section.banner{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 25vh;
+  background:
+    url('./assets/bg.jpeg') no-repeat;
+  background-size: cover;
+}
+
+section.banner .container{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.banner select{
+  font-size: 1.2rem;
+}
+
+div.loader{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+img.loader {
+  width: 100px;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+img.logoMeliuz{
+  width: 100px;
+}
+
+.cardContainer{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.card{
+  color: #633e16;
+  border-radius: 15px;
+  padding: 25px;
+  width: 90%;
+  max-width: 1024px;
+  margin: 20px 0;
+  border-bottom: 1px solid black;
+  display: flex;
+  align-items: center;
+}
+
+.card img{
+  margin-right: 10px;
+}
+
+.card p{  
+  font-family: 'Patrick Hand', cursive;
+  font-size: 2rem;
+}
+
+footer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  margin-top: 50px;
+}
+
+footer p{
+  font-size: 1rem;
+  font-family: 'Lobster', cursive;
+  color: #ff3859;
+  margin-top: 5px;
 }
